@@ -22,7 +22,7 @@ export default function App() {
   return (
     <div className={css.app}>
       <CafeInfo />
-      <VoteOptions />
+      <VoteOptions onVote={handleVote} onReset={resetVotes} canReset={true} />
     </div>
   );
 }
